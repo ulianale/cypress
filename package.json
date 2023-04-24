@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ChromeHeadlessWeb": "cypress run -C cypress.config.js",
+    "ChromeHeadedMobile": "cypress run --browser chrome --headed -C cypress2.config.js",
+    "ElectronHeadlessWeb": "cypress run --browser electron -C cypress.config.js",
+    "ElectronHeadedMobile": "cypress run --browser electron --headed -C cypress2.config.js"
   },
   "author": "",
   "license": "ISC",
